@@ -1,0 +1,11 @@
+{
+  "id": "krocotovski.friend_tags",
+  "name": "Friend tags",
+  "name_ru": "Отметки друзей",
+  "version": "1.0",
+  "author": "krocotovski264",
+  "description": "Your comments and reposts where you @-tagged friends, with their replies and likes. Tap an item to open the video.",
+  "description_ru": "Ваши комментарии и репосты с @отметками друзей, их ответы и лайки. Нажмите на элемент, чтобы открыть видео.",
+  "entry": "com.krocotovski.mentions.Mentions",
+  "min_api": 3
+}

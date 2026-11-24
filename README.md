@@ -1,0 +1,18 @@
+# TikTok mod plugins
+
+Плагины для мода TikTok (формат `.mtp`). Каждая папка с `manifest.json` и `java/` — отдельный плагин.
+
+- `friend_tags/` — «Отметки друзей»: ваши комментарии и репосты с @отметками, ответы и лайки друзей.
+- `api-stubs/` — заглушки API (`Plugin`, `PluginContext`) только для компиляции, в dex не попадают.
+
+## Сборка
+
+Каждый push в `main` запускает GitHub Actions: `build.sh` компилирует плагины против `android.jar`
+из Android SDK раннера, собирает dex через d8 и кладёт `out/<id>.mtp` в артефакт `plugins-mtp`
+(вкладка Actions → последний запуск → Artifacts).
+
+Локально: `ANDROID_HOME=/путь/к/sdk bash build.sh`.
+
+## Установка
+
+Откройте `.mtp` → «Открыть с помощью → TikTok», либо «Настройки мода → Плагины → Установить плагин».
