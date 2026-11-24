@@ -9,7 +9,8 @@
 
 Каждый push в `main` запускает GitHub Actions: `build.sh` компилирует плагины против `android.jar`
 из Android SDK раннера, собирает dex через d8 и кладёт `out/<id>.mtp` в артефакт `plugins-mtp`
-(вкладка Actions → последний запуск → Artifacts).
+(вкладка Actions → последний запуск → Artifacts), а также коммитит его в `dist/` —
+оттуда удобно скачать прямо с телефона.
 
 Локально: `ANDROID_HOME=/путь/к/sdk bash build.sh`.
 
